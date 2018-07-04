@@ -52,6 +52,7 @@ namespace WebAppContact.Controllers
         {
             DateTime date = DateTime.Now;
 
+
             var uid = Request.QueryString["uid"];
             var newEmail = Request["newEmail"];
             var contactId = Request["id"];
