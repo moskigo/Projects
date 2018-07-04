@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WebAppContact.Models.Contact>
+
+
+<div>
+
+
+    <div id="emailGroupName">
+        <h3>Location: @Model.First().RetailLocationName</h3>
+    </div>
+
+    
+        <div style="padding-top:60px">
+
+            <form action="~/Group/SaveChange/?uid=@Model.First().RetailLocationID" method="post">
+                <input id="email" type="hidden" value="@Model.First().Email" name="email" />
+
+                <div class="row">
+                    <div class="col-xs-12 hidden-xs">
+                        <p style="text-align:center; padding-left:0" class="col-xs-2 col-md-4 col-lg-3 col-sm-3" >Keep Email Address<br> On File</p>
+                       <p class="col-xs-6 col-sm-4 col-md-4 col-lg-3" >Full Name</p>
+                        <p class="col-xs-4 col-sm-4 col-md-3 col-lg-3" >Email</p>
+                        <p style="text-align:center; padding-left:0" class="col-xs-4 col-sm-1 col-md-1 col-lg-3">Inactive</p>
+                    </div>
+                </div>
+                <hr />
+                
+                    @foreach (var item in Model)
+                    {
+                <div class="row">
+
+
+
+                    <div id="contRadio" class="col-xs-1 col-md-4 col-lg-3 col-sm-3">
+                        <input style="margin-top:10px;" class="radiob" type="radio" name="main" value="@item.ID" checked="@item.MainContact" data-prev="@item.MainContact" />
+                    </div>
+
+                    <div class="col-xs-11 col-sm-4 col-md-4 col-lg-3 test">
+
+                        <h4 class="mainName" style="margin-top:8px">@(item.NewFirstName.IsEmpty() ? item.FirstName : item.NewFirstName ) @(item.NewLastName.IsEmpty() ? item.LastName : item.NewLastName )</h4>
+                        <input name="newFName" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 editName" type="text" />
+                        <input name="newLName" style="margin-left:2px" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 editName" type="text" />
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 test">
+                        <input id="@item.ID" type="email" class="form-control mob-email" value="@item.EmailContact" name="newEmail" pattern=@ViewBag.pattern />
+                        <input type="hidden" value="@item.ID" name="id" />
+                    </div>
+
+                    
+                    <div style="margin-left:0; padding-top:5px" class="col-xs-1 col-sm-1 col-md-1 col-lg-2 check">
+                        <input type="checkbox" name="OldContact" value="@item.ID" checked="@item.Deleted" />
+                    </div>
+                    <div style="margin-top:13px" class="col-xs-4 hidden-sm hidden-md hidden-lg" >
+                        <span>inactive</span>
+                    </div>
+                       
+
+                </div>
+                       
+                   
+                <br />
+                    }
+
+                    <input id="btnSubmit" type="submit" value="SAVE CHANGES" />
+            </form>
+        </div>
+        
+    </div>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <script src="~/Scripts/JavaScript.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/style.css"/>
+</head>
+<body>
+
+    <div id="mainContainer" class="container">
+        <header class="row">
+            <div id="semHeader" class="col-xs-12">
+                <a href="#" title="Calico Cottage" id="mainLogo">
+                    <img src="~/fonts/hdrLogo.png" alt="Calico Cottage" />
+                </a>
+
+                <div id="headerContact" class="hidden-xs" align="right">
+                    Call us today: &nbsp;&nbsp;855-289-8399<br />
+                    (USA & Canada)<br />
+                    631-841-2100
+                </div>
+            </div>
+        </header>
+        <div class="row pageHeader">
+            <div class="col-xs-12"><h1 class="noContactError">A New and Improved Website is Coming Soon</h1></div>
+        </div>
+
+        <div class="row pageCont">
+            <div class="col-xs-12">
+                <p>
+                    We are thrilled to announce that we’ve been hard at work <b>updating our website for a re-launch this Fall</b>,
+                    adding in new tools and features that will help you grow, improve, and innovate your business.
+                </p>
+                <p>
+                    On our new (mobile-friendly) website, you will find new and enhanced ways to discover and keep track of your
+                    favorite articles and recipes, manage your retail location(s) and preferences, as well as enjoy a more intuitive
+                    experience all-around.
+                </p>
+                <p>
+                    In preparation for launch, one minor technical change is required.
+                </p>
+                <p>
+                    <b>Here’s what you need to do:</b>
+                </p>
+                <p>
+                    Every visitor will now need their own unique email address to log-in.
+                </p>
+                <p>
+                    In the past, contacts shared one email address with separate usernames. Now, you will need to decide who keeps
+                    the original email address—and create alternative email addresses for others on the account.
+                </p>
+                <p>
+                    To do this, please select one contact to keep the existing email address on file and provide a different email
+                    for those contacts you wish to login to the new website using the form below.
+                </p>
+                <p>
+                    Remember, we are always here to help you, so make sure to contact us with any questions or concerns.
+                </p>
+            </div>
+        </div>
+
+        <div id="placeTable" class="row">
+            <div class="col-xs-12"> @RenderBody()</div>
+        </div>
+
+    </div>
+
+    
+       
+        
+       
+   
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

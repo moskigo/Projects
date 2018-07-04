@@ -1,0 +1,211 @@
+#mainContainer{
+    background: #FFF;
+    padding-bottom:20px;
+}
+
+
+header{
+    background: url(../fonts/bkgSEMHeader.gif) repeat scroll 0 0 transparent;
+    height: 113px;
+    margin: 0 0 50px;
+    position: relative;
+    margin: 0;
+}
+
+#semHeader{
+    height:100%;
+}
+
+div, span, tr, td, strong, tbody, table, h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+body{
+    width: 100%;
+    background-color: #e5e2d9;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#mainLogo{
+    width: 240px;
+    height: 158px;
+    float: left;
+}
+
+h1, .noContactError, #success > h3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #a20915;
+    font-size: 3.5em;
+    font-weight: normal;
+    line-height: 0.9em;
+    width: auto;
+}
+
+
+hgroup{
+    margin-left:40px;
+}
+
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#headerContact{
+    bottom: 10px;
+    right: 22px;
+    color: #504841;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-top:30px;
+}
+
+div{
+    display: block;
+}
+
+#tableContacts{
+    margin:10px;
+    font-size:16px;
+}
+
+#emailGroupName{
+    position:relative;
+    float:left;
+    width:auto;
+    text-align:right;
+    margin-right:15px;
+}
+
+#emailGroupName > h3{
+    width:auto;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.pageHeader, .pageCont{
+    margin-top:50px;
+    padding:0 20px;
+}
+
+.pageHeader > h3{
+    font-size:7em;
+}
+
+.pageCont > p{
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#placeTable{
+    padding:0 20px;
+}
+
+#success {
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid #dddddd;
+    color: #a20915;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+  #success > h3 {
+        font-size: 2em;
+        line-height: 39px;
+        text-align: center;
+        
+    }
+
+html{
+    width:100%;
+}
+
+
+.allTable {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.dheader{
+    padding:0px;
+
+}
+
+.form-control{
+    width:auto;
+}
+
+.radiob{
+    text-align:left;
+}
+
+.mob-email {
+    margin-top:15px;
+}
+
+@media only screen and (max-width: 770px) {
+    .mob-email {
+        width:90%;
+    }
+
+   
+    .noContactError{
+        font-size:2em;
+    }
+    #success > h3{
+        font-size:1em;
+    }
+}
+
+#contRadio {
+    text-align: center;
+}
+
+.check{
+    margin-top:20px;
+}
+
+@media only screen and (max-width: 767px) {
+    #contRadio{
+        text-align:left;
+    }
+
+.check {
+    margin-top: 9px;
+    padding-left:16px;
+}
+
+}
+
+
+
+    .test {
+        float: left
+    }
+
+
+#btnSubmit {
+    font-family: Verdana;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    background-image: url(../fonts/buttonbg.jpg);
+}
+
+.editName{
+    width:90px;
+    height:20px;
+    border-left:none;
+    border-top:none;
+}
+
+.mainName{
+    margin-bottom:2px;
+}
