@@ -148,7 +148,75 @@ html{
 }
 
 .mob-email {
-    margin-top:15px;
+    margin-top:1px;
+}
+
+
+
+#contRadio {
+    text-align: center;
+    margin-top:10px;
+}
+
+.check{
+    margin-top:20px;
+}
+
+.mainName{
+    margin-bottom:2px;
+    padding-left:2px;
+    
+}
+
+.editName {
+    width: 95%;
+    height: 20px;
+    margin-left: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+
+
+    .test {
+        float: left;
+    }
+
+        .test > label {
+            font-size: 10px;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+#btnSubmit {
+    font-family: Verdana;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    background-image: url(../fonts/buttonbg.jpg);
+}
+
+.NameContainer{
+    float:left;
+    width:40%;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    #contRadio {
+        text-align: left;
+    }
+
+    .check {
+        margin-top: 9px;
+        padding-left: 16px;
+    }
+
+    .editName {
+        
+    }
 }
 
 @media only screen and (max-width: 770px) {
@@ -163,49 +231,8 @@ html{
     #success > h3{
         font-size:1em;
     }
-}
 
-#contRadio {
-    text-align: center;
-}
-
-.check{
-    margin-top:20px;
-}
-
-@media only screen and (max-width: 767px) {
-    #contRadio{
-        text-align:left;
+    .NameContainer{
+        width:90px;
     }
-
-.check {
-    margin-top: 9px;
-    padding-left:16px;
-}
-
-}
-
-
-
-    .test {
-        float: left
-    }
-
-
-#btnSubmit {
-    font-family: Verdana;
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-    background-image: url(../fonts/buttonbg.jpg);
-}
-
-.editName{
-    width:90px;
-    height:20px;
-    border-left:none;
-    border-top:none;
-}
-
-.mainName{
-    margin-bottom:2px;
 }

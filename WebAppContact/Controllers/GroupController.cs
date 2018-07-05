@@ -52,7 +52,6 @@ namespace WebAppContact.Controllers
         {
             DateTime date = DateTime.Now;
 
-
             var uid = Request.QueryString["uid"];
             var newEmail = Request["newEmail"];
             var contactId = Request["id"];
@@ -80,8 +79,10 @@ namespace WebAppContact.Controllers
                     contact.ModifiedDate = date;
                     contact.Deleted = listOld == null? false: listOld.Contains(contact.ID.ToString());
                     contact.MainContact = contact.ID == MainId;
-                    contact.NewFirstName = newFNames[i];
-                    contact.NewLastName = newLNames[i];
+                    if(newFNames[i] != String.Empty)
+                        contact.NewFirstName = newFNames[i];
+                    if (newLNames[i] != String.Empty)
+                        contact.NewLastName = newLNames[i];
                 }
                 
                 model.SaveChanges();
