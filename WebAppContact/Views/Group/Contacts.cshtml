@@ -35,14 +35,13 @@
                     </div>
 
                     <div class="col-xs-10 col-sm-4 col-md-4 col-lg-3 test" style="margin-top:7px">
-
                         <div class="NameContainer">
                             <div>
                                 <h4 class="mainName">@(item.NewFirstName.IsEmpty() ? item.FirstName : item.NewFirstName )</h4>
                             </div>
 
                             <div>
-                                <input name="newFName" class=" editName" type="text" />
+                                <input name="newFName" class="form-control editName" type="text" />
                             </div>
                         </div>
                         <div class="NameContainer">
@@ -50,13 +49,10 @@
                                 <h4 class="mainName">@(item.NewLastName.IsEmpty() ? item.LastName : item.NewLastName )</h4>
                             </div>
                             <div>
-                                <input name="newLName" class="editName" type="text" />
+                                <input name="newLName" class="form-control editName" type="text" />
                             </div>
-
                         </div>
-                           
-                    </div>
-
+                    </div> 
 
                     <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 test">
                         <label>@item.Email</label>
@@ -64,7 +60,6 @@
                         <input type="hidden" value="@item.ID" name="id" />
                     </div>
 
-                    
                     <div style="margin-left:0; padding-top:10px" class="col-xs-1 col-sm-1 col-md-1 col-lg-2 check">
                         <input type="checkbox" name="OldContact" value="@item.ID" checked="@item.Deleted" />
                     </div>
@@ -72,7 +67,6 @@
                         <span>inactive</span>
                     </div>
                        
-
                 </div>
                        
                    

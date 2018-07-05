@@ -53,10 +53,10 @@ hgroup{
 }
 
 
-table{
+/*table{
     border-collapse: collapse;
     border-spacing: 0;
-}
+}*/
 
 #headerContact{
     bottom: 10px;
@@ -128,12 +128,6 @@ html{
 }
 
 
-.allTable {
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-
 .dheader{
     padding:0px;
 
@@ -149,13 +143,14 @@ html{
 
 .mob-email {
     margin-top:1px;
+    height:30px;
 }
 
 
 
 #contRadio {
     text-align: center;
-    margin-top:10px;
+    margin-top:24px;
 }
 
 .check{
@@ -164,17 +159,15 @@ html{
 
 .mainName{
     margin-bottom:2px;
+    margin-top:0;
     padding-left:2px;
-    
+    font-size:17px;
 }
 
 .editName {
     width: 95%;
-    height: 20px;
+    height: 29px;
     margin-left: 2px;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
 }
 
 
@@ -183,10 +176,14 @@ html{
         float: left;
     }
 
-        .test > label {
-            font-size: 10px;
+        
+    .test > label {
+            font-size: 12px;
             text-align: center;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            margin-bottom:2px;
+            margin-top:6px;
         }
 
 #btnSubmit {
