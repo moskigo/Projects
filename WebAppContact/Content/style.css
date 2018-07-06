@@ -53,11 +53,6 @@ hgroup{
 }
 
 
-/*table{
-    border-collapse: collapse;
-    border-spacing: 0;
-}*/
-
 #headerContact{
     bottom: 10px;
     right: 22px;
@@ -129,7 +124,6 @@ html{
 
 .dheader{
     padding:0px;
-
 }
 
 .form-control{
@@ -141,7 +135,7 @@ html{
 }
 
 .mob-email {
-    margin-top:1px;
+    
     height:30px;
 }
 
@@ -149,11 +143,14 @@ html{
 
 #contRadio {
     text-align: center;
-    margin-top:24px;
+    margin-top:30px;
 }
 
-.check{
-    margin-top:20px;
+.check {
+    margin-top: 27px;
+    margin-left: 0;
+    padding-left: 18px;
+    padding-top: 10px
 }
 
 .mainName{
@@ -173,6 +170,7 @@ html{
 
     .test {
         float: left;
+        padding-left:15px;
     }
 
         
@@ -181,8 +179,8 @@ html{
             text-align: center;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 500;
-            margin-bottom:2px;
-            margin-top:6px;
+            margin-bottom:0;
+            margin-top:9px;
         }
 
 #btnSubmit {
@@ -203,6 +201,7 @@ html{
 @media only screen and (max-width: 767px) {
     #contRadio {
         text-align: left;
+        padding-left: 17px;
     }
 
     .check {
@@ -213,22 +212,21 @@ html{
     .editName {
         
     }
+
+    .NameContainer{
+        width:50%;
+    }
 }
 
 @media only screen and (max-width: 770px) {
     .mob-email {
-        width:90%;
+        width:98%;
     }
 
-   
     .noContactError{
         font-size:2em;
     }
     #success > h3{
         font-size:1em;
-    }
-
-    .NameContainer{
-        width:90px;
     }
 }
