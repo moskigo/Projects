@@ -120,7 +120,6 @@ div{
         font-size: 2em;
         line-height: 39px;
         text-align: center;
-        
     }
 
 html{
@@ -166,7 +165,7 @@ html{
 
 .editName {
     width: 95%;
-    height: 29px;
+    height: 30px;
     margin-left: 2px;
 }
 
@@ -178,7 +177,7 @@ html{
 
         
     .test > label {
-            font-size: 12px;
+            font-size: 17px;
             text-align: center;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: 500;
