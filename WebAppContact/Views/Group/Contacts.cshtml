@@ -43,7 +43,7 @@
                             </div>
 
                             <div>
-                                <input name="newFName" class="form-control editName" type="text" />
+                                <input id="@item.ID" name="newFName" class="form-control editName" type="text"/>
                             </div>
                         </div>
                         <div class="NameContainer">
@@ -51,7 +51,7 @@
                                 <h4 class="mainName">@(item.NewLastName.IsEmpty() ? item.LastName : item.NewLastName )</h4>
                             </div>
                             <div>
-                                <input name="newLName" class="form-control editName" type="text" />
+                                <input id="@item.ID" name="newLName" class="form-control editName" type="text"/>
                             </div>
                         </div>
                     </div>
