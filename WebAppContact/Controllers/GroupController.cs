@@ -37,7 +37,7 @@ namespace WebAppContact.Controllers
                     return View("ParamError");
                 }
                 var contacts = model.Contacts.Where(a => a.Email == email).ToList();
-                ViewBag.pattern = @"[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.([com|net|org]{3}|co|us|uk|fr|de|in{2})";
+                ViewBag.pattern = @"[a-zA-Z0-9._\-]+@[a-zA-Z0-9.\-]+\.([com|net|org]{3}|co.uk|uk|fr|de|be|it|in|es|ca|nl|ua|ru|ch|co|net.au|co.in|co.jp|com.br|com.au|com.sg)";
                 return View(contacts);
             }
             catch (Exception ex)
